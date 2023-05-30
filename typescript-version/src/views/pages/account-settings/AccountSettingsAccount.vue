@@ -124,7 +124,7 @@ const currencies = [
                 @click="refInputEl?.click()"
               >
                 <VIcon
-                  icon="mdi-cloud-upload-outline"
+                  icon="bx-cloud-upload"
                   class="d-sm-none"
                 />
                 <span class="d-none d-sm-block">Upload new photo</span>
@@ -147,7 +147,7 @@ const currencies = [
               >
                 <span class="d-none d-sm-block">Reset</span>
                 <VIcon
-                  icon="mdi-refresh"
+                  icon="bx-refresh"
                   class="d-sm-none"
                 />
               </VBtn>

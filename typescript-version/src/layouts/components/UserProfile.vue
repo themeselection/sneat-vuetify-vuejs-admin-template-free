@@ -59,7 +59,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-account-outline"
+                icon="bx-user"
                 size="22"
               />
             </template>
@@ -72,7 +72,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-cog-outline"
+                icon="bx-cog"
                 size="22"
               />
             </template>
@@ -85,7 +85,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-currency-usd"
+                icon="bx-dollar"
                 size="22"
               />
             </template>
@@ -98,7 +98,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-help-circle-outline"
+                icon="bx-help-circle"
                 size="22"
               />
             </template>
@@ -114,7 +114,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-logout"
+                icon="bx-log-out"
                 size="22"
               />
             </template>

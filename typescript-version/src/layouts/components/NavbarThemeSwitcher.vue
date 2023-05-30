@@ -4,11 +4,11 @@ import type { ThemeSwitcherTheme } from '@layouts/types'
 const themes: ThemeSwitcherTheme[] = [
   {
     name: 'light',
-    icon: 'mdi-weather-sunny',
+    icon: 'bx-sun',
   },
   {
     name: 'dark',
-    icon: 'mdi-weather-night',
+    icon: 'bx-moon',
   },
 ]
 </script>

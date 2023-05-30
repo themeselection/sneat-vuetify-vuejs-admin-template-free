@@ -64,6 +64,11 @@ interface BundleScriptConfig {
 
 const sources: BundleScriptConfig = {
   svg: [
+    {
+      dir: 'src/assets/images/iconify-svg',
+      monotone: false,
+      prefix: 'custom',
+    },
 
     // {
     //   dir: 'emojis',
@@ -86,7 +91,34 @@ const sources: BundleScriptConfig = {
     // 'json/gg.json',
 
     // Iconify JSON file (@iconify/json is a package name, /json/ is directory where files are, then filename)
-    require.resolve('@iconify-json/tabler/icons.json'),
+    require.resolve('@iconify-json/bx/icons.json'),
+    require.resolve('@iconify-json/bxs/icons.json'),
+    require.resolve('@iconify-json/bxl/icons.json'),
+    {
+      filename: require.resolve('@iconify-json/mdi/icons.json'),
+      icons: [
+        'file-remove-outline',
+        'translate',
+        'vuetify',
+        'information-variant',
+        'arrow-top-right',
+        'arrow-bottom-right',
+        'arrow-bottom-left',
+        'arrow-top-left',
+        'arrow-collapse-all',
+        'arrow-down-left',
+        'web',
+        'cpu-32-bit',
+        'alpha-r',
+        'alpha-g',
+        'alpha-b',
+        'map-marker-off-outline',
+        'alpha-t-box-outline',
+        'form-select',
+        'account-cog-outline',
+        'laptop',
+      ],
+    },
 
     // Custom file with only few icons
     // {

@@ -120,7 +120,7 @@ const isCardDetailsVisible = ref(false)
             size="small"
             @click="isCardDetailsVisible = !isCardDetailsVisible"
           >
-            <VIcon :icon="isCardDetailsVisible ? 'mdi-chevron-up' : 'mdi-chevron-down'" />
+            <VIcon :icon="isCardDetailsVisible ? 'bx-chevron-up' : 'bx-chevron-down'" />
           </VBtn>
         </VCardActions>
 
@@ -167,13 +167,13 @@ const isCardDetailsVisible = ref(false)
 
             <VCardActions class="justify-space-between">
               <VBtn>
-                <VIcon icon="mdi-cart-plus" />
+                <VIcon icon="bx-cart-add" />
                 <span class="ms-2">Add to cart</span>
               </VBtn>
 
               <VBtn
                 color="secondary"
-                icon="mdi-share-variant-outline"
+                icon="bx-share-alt"
               />
             </VCardActions>
           </div>
@@ -289,7 +289,7 @@ const isCardDetailsVisible = ref(false)
                 <p class="d-flex align-center mb-6">
                   <VIcon
                     color="primary"
-                    icon="mdi-lock-open-outline"
+                    icon="bx-lock-open"
                   />
                   <span class="ms-3">Full Access</span>
                 </p>
@@ -297,7 +297,7 @@ const isCardDetailsVisible = ref(false)
                 <p class="d-flex align-center mb-0">
                   <VIcon
                     color="primary"
-                    icon="mdi-account-outline"
+                    icon="bx-user"
                   />
                   <span class="ms-3">15 Members</span>
                 </p>
@@ -313,7 +313,7 @@ const isCardDetailsVisible = ref(false)
                 <p class="d-flex align-center mb-6">
                   <VIcon
                     color="primary"
-                    icon="mdi-star-outline"
+                    icon="bx-star"
                   />
                   <span class="ms-3">Access all Features</span>
                 </p>
@@ -321,7 +321,7 @@ const isCardDetailsVisible = ref(false)
                 <p class="d-flex align-center mb-0">
                   <VIcon
                     color="primary"
-                    icon="mdi-trending-up"
+                    icon="bx-trending-up"
                   />
                   <span class="ms-3">Lifetime Free Update</span>
                 </p>
@@ -427,7 +427,7 @@ const isCardDetailsVisible = ref(false)
           >
             <VIcon
               size="2rem"
-              icon="mdi-help-circle-outline"
+              icon="bx-help-circle"
             />
           </VAvatar>
 

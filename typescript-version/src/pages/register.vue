@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AuthProvider from '@/views/pages/authentication/AuthProvider.vue';
-import logo from '@images/logo.svg?raw';
+import AuthProvider from '@/views/pages/authentication/AuthProvider.vue'
+import logo from '@images/logo.svg?raw'
 
 const form = ref({
   username: '',
@@ -71,7 +71,7 @@ const isPasswordVisible = ref(false)
                 label="Password"
                 placeholder="············"
                 :type="isPasswordVisible ? 'text' : 'password'"
-                :append-inner-icon="isPasswordVisible ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
+                :append-inner-icon="isPasswordVisible ? 'bx-hide' : 'bx-show'"
                 @click:append-inner="isPasswordVisible = !isPasswordVisible"
               />
               <div class="d-flex align-center mt-1 mb-4">
