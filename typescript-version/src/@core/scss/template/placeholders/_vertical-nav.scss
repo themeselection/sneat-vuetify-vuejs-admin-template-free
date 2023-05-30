@@ -1,0 +1,21 @@
+// Open & Active nav group styles
+%vertical-nav-group-active {
+  --v-theme-overlay-multiplier: 2;
+
+  color: rgb(var(--v-global-theme-primary));
+
+  &:hover {
+    --v-theme-overlay-multiplier: 4;
+  }
+}
+
+// nav-group and nav-link border radius
+%vertical-nav-item-interactive {
+  border-radius: 0.375rem;
+  margin-block-end: 0.125rem;
+}
+
+// ℹ️ Icon styling for icon nested inside another nav item (2nd level)
+%vertical-nav-items-nested-icon {
+  transition: transform 0.25s ease-in-out 0s;
+}

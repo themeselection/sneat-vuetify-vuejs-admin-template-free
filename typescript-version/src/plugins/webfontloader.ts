@@ -9,7 +9,8 @@ export async function loadFonts() {
 
   webFontLoader.load({
     google: {
-      families: ['Roboto:100,300,400,500,700,900&display=swap'],
+      api: 'https://fonts.googleapis.com/css2',
+      families: ['Public+Sans:wght@300;400;500;600;700&display=swap'],
     },
   })
 }
