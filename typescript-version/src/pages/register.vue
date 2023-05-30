@@ -28,8 +28,8 @@ const isPasswordVisible = ref(false)
           </div>
         </template>
 
-        <VCardTitle class="text-2xl text-uppercase">
-          Master
+        <VCardTitle class="text-2xl font-weight-bold">
+          sneat
         </VCardTitle>
       </VCardItem>
 
