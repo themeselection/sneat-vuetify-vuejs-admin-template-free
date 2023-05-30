@@ -3,7 +3,6 @@ interface Props {
   title: string
   image: string
   stats: string
-  color: string
   change: number
 }
 
@@ -15,18 +14,11 @@ const isPositive = controlledComputed(() => props.change, () => Math.sign(props.
 <template>
   <VCard>
     <VCardText class="d-flex align-center pb-4">
-      <VAvatar
-        v-if="props.image"
-        size="38"
-        :color="props.color"
-        variant="tonal"
-        rounded
+      <img
+        width="42"
+        :src="props.image"
+        alt="image"
       >
-        <VIcon
-          :icon="props.image"
-          size="24"
-        />
-      </VAvatar>
 
       <VSpacer />
 

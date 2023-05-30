@@ -243,7 +243,7 @@ const balanceData = [
         <VueApexCharts
           id="bar-chart"
           type="bar"
-          :height="345"
+          :height="336"
           :options="chartOptions.bar"
           :series="series"
         />

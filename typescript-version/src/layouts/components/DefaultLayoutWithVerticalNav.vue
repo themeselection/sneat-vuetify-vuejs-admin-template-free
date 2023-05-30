@@ -54,7 +54,7 @@ const upgradeBanner = computed(() => {
 
         <IconBtn
           class="me-2"
-          href="https://github.com/themeselection/master-vuetify-vuejs-admin-template-free"
+          href="https://github.com/themeselection/sneat-vuetify-vuejs-admin-template-free"
           target="_blank"
           rel="noopener noreferrer"
         >

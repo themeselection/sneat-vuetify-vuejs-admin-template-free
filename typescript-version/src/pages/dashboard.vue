@@ -7,6 +7,10 @@ import AnalyticsTotalRevenue from '@/views/dashboard/AnalyticsTotalRevenue.vue'
 import AnalyticsTransactions from '@/views/dashboard/AnalyticsTransactions.vue'
 
 // 👉 Images
+import chart from '@images/cards/chart-success.png'
+import card from '@images/cards/credit-card-primary.png'
+import paypal from '@images/cards/paypal-error.png'
+import wallet from '@images/cards/wallet-info.png'
 </script>
 
 <template>
@@ -32,8 +36,7 @@ import AnalyticsTransactions from '@/views/dashboard/AnalyticsTransactions.vue'
           <CardStatisticsVertical
             v-bind="{
               title: 'Profit',
-              image: 'bx-pie-chart-alt',
-              color: 'success',
+              image: chart,
               stats: '$12,628',
               change: 72.80,
             }"
@@ -48,8 +51,7 @@ import AnalyticsTransactions from '@/views/dashboard/AnalyticsTransactions.vue'
           <CardStatisticsVertical
             v-bind="{
               title: 'Sales',
-              image: 'bx-wallet',
-              color: 'info',
+              image: wallet,
               stats: '$4,679',
               change: 28.42,
             }"
@@ -84,8 +86,7 @@ import AnalyticsTransactions from '@/views/dashboard/AnalyticsTransactions.vue'
           <CardStatisticsVertical
             v-bind=" {
               title: 'Payments',
-              image: 'bxl-paypal',
-              color: 'error',
+              image: paypal,
               stats: '$2,468',
               change: -14.82,
             }"
@@ -100,8 +101,7 @@ import AnalyticsTransactions from '@/views/dashboard/AnalyticsTransactions.vue'
           <CardStatisticsVertical
             v-bind="{
               title: 'Transactions',
-              image: 'bx-credit-card',
-              color: 'primary',
+              image: card,
               stats: '$14,857',
               change: 28.14,
             }"

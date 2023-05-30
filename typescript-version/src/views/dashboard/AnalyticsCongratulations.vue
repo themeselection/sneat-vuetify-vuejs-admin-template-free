@@ -23,13 +23,15 @@ const illustrationJohn = computed(() => global.name.value === 'dark' ? illustrat
         </VCardItem>
 
         <VCardText>
-          You have done 72% 🤩 more sales today.
-          <br>
-          Check your new raising badge in your profile.
+          <span>
+            You have done 72% 🤩 more sales today.
+            <br>
+            Check your new raising badge in your profile.
+          </span>
           <br>
           <VBtn
             variant="tonal"
-            class="mt-4 mb-1"
+            class="mt-4"
             size="small"
           >
             View Badges
