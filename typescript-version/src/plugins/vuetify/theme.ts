@@ -46,6 +46,7 @@ const theme: VuetifyOptions['theme'] = {
         'snackbar-color': '#ffffff',
         'tooltip-background': '#262732',
         'tooltip-opacity': 0.9,
+        'table-header-background': '#F5F5F7',
 
         // Shadows
         'shadow-key-umbra-opacity': 'rgba(var(--v-theme-on-surface), 0.06)',
@@ -94,6 +95,7 @@ const theme: VuetifyOptions['theme'] = {
         'snackbar-color': '#2B2C40',
         'tooltip-background': '#464A65',
         'tooltip-opacity': 0.9,
+        'table-header-background': '#3A3E5B',
 
         // Shadows
         'shadow-key-umbra-opacity': 'rgba(20, 21, 33, 0.06)',

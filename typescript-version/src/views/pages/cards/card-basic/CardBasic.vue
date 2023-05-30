@@ -75,7 +75,7 @@ const isCardDetailsVisible = ref(false)
           </div>
 
           <!--  Mutual Friends -->
-          <div class="d-flex justify-space-between align-center mt-8">
+          <div class="d-flex justify-space-between align-center mt-4">
             <span class="font-weight-medium">18 mutual friends</span>
 
             <div class="v-avatar-group">
@@ -98,31 +98,29 @@ const isCardDetailsVisible = ref(false)
       sm="6"
     >
       <VCard>
-        <VImg :src="pages3" />
+        <VImg
+          :src="pages3"
+          cover
+          max-height="280"
+        />
 
         <VCardItem>
           <VCardTitle>Popular Uses Of The Internet</VCardTitle>
         </VCardItem>
 
         <VCardText>
-          Although cards can support multiple actions, UI controls, and an overflow menu.
-        </VCardText>
-
-        <VCardActions>
-          <VBtn @click="isCardDetailsVisible = !isCardDetailsVisible">
-            Details
-          </VBtn>
-
-          <VSpacer />
+          <div class="mb-4">
+            Although cards can support multiple actions, UI controls, and an overflow menu.
+          </div>
 
           <VBtn
-            icon
-            size="small"
+            variant="text"
+            density="comfortable"
             @click="isCardDetailsVisible = !isCardDetailsVisible"
           >
-            <VIcon :icon="isCardDetailsVisible ? 'bx-chevron-up' : 'bx-chevron-down'" />
+            Details
           </VBtn>
-        </VCardActions>
+        </VCardText>
 
         <VExpandTransition>
           <div v-show="isCardDetailsVisible">
@@ -397,11 +395,13 @@ const isCardDetailsVisible = ref(false)
         </VCardText>
 
         <VCardText>
-          If you are looking for a new way to promote your business that won't cost you more money, maybe printing is one of the options you won't resist.
-        </VCardText>
+          <p>
+            If you are looking for a new way to promote your business that won't cost you more money, maybe printing is one of the options you won't resist.
+          </p>
 
-        <VCardText>
-          become fast, easy and simple. If you want your promotional material to be an eye-catching
+          <p class="mb-0">
+            become fast, easy and simple. If you want your promotional material to be an eye-catching
+          </p>
         </VCardText>
 
         <VCardActions>
@@ -441,12 +441,11 @@ const isCardDetailsVisible = ref(false)
             According to us blisters are a very common thing and we come across them very often in our daily lives. It is a very common occurrence like cold or fever depending upon your lifestyle.
           </p>
         </VCardText>
-
-        <VCardActions class="justify-center">
+        <VCardText>
           <VBtn variant="elevated">
             Contact Now
           </VBtn>
-        </VCardActions>
+        </VCardText>
       </VCard>
     </VCol>
   </VRow>

@@ -96,7 +96,7 @@ const recentDevices = [
         <VForm>
           <VCardText>
             <!-- 👉 Current Password -->
-            <VRow class="mb-3">
+            <VRow>
               <VCol
                 cols="12"
                 md="6"
@@ -308,7 +308,7 @@ const recentDevices = [
         <VDataTable
           :headers="recentDevicesHeaders"
           :items="recentDevices"
-          class="text-no-wrap"
+          class="text-no-wrap rounded-0 text-sm"
         >
           <template #item.browser="{ item }">
             <div class="d-flex">
@@ -317,7 +317,7 @@ const recentDevices = [
                 :icon="item.raw.deviceIcon.icon"
                 :color="item.raw.deviceIcon.color"
               />
-              <span>
+              <span class="text-high-emphasis text-base">
                 {{ item.raw.browser }}
               </span>
             </div>
