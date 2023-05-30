@@ -79,7 +79,7 @@ const iconsList = [
     <!-- more icons -->
     <div class="text-center">
       <VBtn
-        href="https://https://boxicons.com/"
+        href="https://boxicons.com/"
         rel="noopener noreferrer"
         color="primary"
         target="_blank"

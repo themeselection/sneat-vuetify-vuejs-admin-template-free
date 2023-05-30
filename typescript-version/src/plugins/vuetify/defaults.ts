@@ -32,7 +32,7 @@ export default {
   },
   VList: {
     VListItem: {
-      activeColor: 'primary',
+      color: 'primary',
     },
   },
   VPagination: {

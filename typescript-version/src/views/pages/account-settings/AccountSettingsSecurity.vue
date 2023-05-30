@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { VDataTable } from 'vuetify/labs/VDataTable'
+
 const isCurrentPasswordVisible = ref(false)
 const isNewPasswordVisible = ref(false)
 const isConfirmPasswordVisible = ref(false)
@@ -306,7 +308,6 @@ const recentDevices = [
         <VDataTable
           :headers="recentDevicesHeaders"
           :items="recentDevices"
-          hide-default-footer
           class="text-no-wrap"
         >
           <template #item.browser="{ item }">
