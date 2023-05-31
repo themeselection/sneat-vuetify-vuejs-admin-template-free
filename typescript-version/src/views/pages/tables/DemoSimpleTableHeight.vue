@@ -42,19 +42,19 @@ const desserts = [
   <VTable height="250">
     <thead>
       <tr>
-        <th class="text-uppercase">
-          Desserts(100g Servings)
+        <th>
+          Desserts (100g Servings)
         </th>
-        <th class="text-uppercase text-center">
+        <th>
           calories
         </th>
-        <th class="text-uppercase text-center">
+        <th>
           Fat(g)
         </th>
-        <th class="text-uppercase text-center">
+        <th>
           Carbs(g)
         </th>
-        <th class="text-uppercase text-center">
+        <th>
           protein(g)
         </th>
       </tr>
@@ -68,16 +68,16 @@ const desserts = [
         <td>
           {{ item.dessert }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.calories }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.fat }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.carbs }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.protein }}
         </td>
       </tr>

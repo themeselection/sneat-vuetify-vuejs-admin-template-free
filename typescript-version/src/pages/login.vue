@@ -49,6 +49,7 @@ const isPasswordVisible = ref(false)
               <VTextField
                 v-model="form.email"
                 autofocus
+                placeholder="johndoe@email.com"
                 label="Email"
                 type="email"
               />

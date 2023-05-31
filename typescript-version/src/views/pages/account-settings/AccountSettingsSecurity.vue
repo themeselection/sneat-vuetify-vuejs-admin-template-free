@@ -204,7 +204,7 @@ const recentDevices = [
           </p>
 
           <VBtn>
-            Enable two-factor authentication
+            Enable 2FA
           </VBtn>
         </VCardText>
       </VCard>

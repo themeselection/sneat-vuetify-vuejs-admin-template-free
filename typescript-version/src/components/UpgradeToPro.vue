@@ -18,9 +18,9 @@
     >
       <VCard>
         <VImg src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template/banner/banner.png" />
-        <VCardTitle>Master - Vuetify Admin Template</VCardTitle>
+        <VCardTitle>Sneat - Vuetify Admin Template</VCardTitle>
         <VCardText>
-          Master Admin is the most developer friendly & highly customisable Admin Dashboard Template based on Vuetify.
+          Sneat Admin is the most developer friendly & highly customisable Admin Dashboard Template based on Vuetify.
         </VCardText>
         <VCardText>Click on below button to explore PRO version.</VCardText>
         <VCardText>

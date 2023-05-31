@@ -43,18 +43,18 @@ const desserts = [
     <thead>
       <tr>
         <th class="text-uppercase">
-          Desserts(100g Servings)
+          Desserts (100g Servings)
         </th>
-        <th class="text-uppercase text-center">
+        <th class="text-uppercase">
           calories
         </th>
-        <th class="text-uppercase text-center">
+        <th class="text-uppercase">
           Fat(g)
         </th>
-        <th class="text-uppercase text-center">
+        <th class="text-uppercase">
           Carbs(g)
         </th>
-        <th class="text-uppercase text-center">
+        <th class="text-uppercase">
           protein(g)
         </th>
       </tr>
@@ -68,16 +68,16 @@ const desserts = [
         <td>
           {{ item.dessert }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.calories }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.fat }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.carbs }}
         </td>
-        <td class="text-center">
+        <td>
           {{ item.protein }}
         </td>
       </tr>

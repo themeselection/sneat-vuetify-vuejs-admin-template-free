@@ -162,6 +162,7 @@ $alert-prepend-icon-font-size: 1.125rem !important;
   }
 }
 
+// 👉 VDatatable
 .v-data-table {
   th {
     background: rgb(var(--v-table-header-background)) !important;
@@ -174,5 +175,14 @@ $alert-prepend-icon-font-size: 1.125rem !important;
       display: flex;
       justify-content: space-between;
     }
+  }
+}
+
+// 👉 VTable
+.v-table {
+  th {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 }
