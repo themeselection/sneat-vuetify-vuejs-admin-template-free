@@ -1,18 +1,18 @@
 <p align="center"></p>
 
 <p align="center">
-   <a href="https://themeselection.com/products/sneat-free-vuetify-vuejs-admin-template" target="_blank">
-      <img src="https://github.com/themeselection/sneat-vuetify-vuejs-admin-template-free/blob/vue-2/src/assets/images/logos/logo.svg" alt="sneat-logo" width="60px" height="auto">
+   <a href="https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/logo/logo.png" alt="sneat-logo" width="60px" height="auto">
    </a>
 </p>
 
 <h1 align="center">
-   <a href="https://themeselection.com/products/sneat-free-vuetify-vuejs-admin-template" target="_blank" align="center">
-      Sneat - Vuetify VueJS 3 Free Admin Template
+   <a href="https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/" target="_blank" align="center">
+ Sneat – Vuetify Vuejs Admin Template Free
    </a>
 </h1>
 
-<p align="center">Production ready carefully crafted most comprehensive admin template</p>
+<p align="center">Production Ready, Carefully Crafted, Extensive Vuetify Admin Template</p>
 
 <p align="center">
    <a href="https://github.com/themeselection/sneat-vuetify-vuejs-admin-template-free/blob/main/LICENSE">
@@ -27,52 +27,27 @@
    </a>
 </p>
 
-<kbd>[![Sneat - Vuetify VueJS Free Admin Template Demo Screenshot](https://user-images.githubusercontent.com/47495003/129342383-2816d6fe-3a88-4189-b08f-f30b9abac2b0.png)](https://themeselection.com/products/sneat-free-vuetify-vuejs-admin-template)</kbd>
+<kbd>[![Sneat – Vuetify Vuejs Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/banner/sneat-vue-free.png)](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/))</kbd>
 
-## Introduction
+## Introduction 🚀
 
-If you’re a developer looking for an admin dashboard that is developer-friendly, rich with features, and highly customizable look no further than Sneat. We’ve followed the highest industry standards to bring you one of the very best **[VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/)** that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
-
-Build premium quality applications with ease. Use our innovative admin template to create eye-catching, high-quality, and high-performing single-page applications. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
+If you're a developer looking for an admin dashboard that is developer-friendly, rich with features, and highly customizable look no further than Sneat. We've followed the highest industry standards to bring you one of the very best [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/) that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you'll be able to build whatever application you want with very little hassle.
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite) & [Vuetify 3](https://next.vuetifyjs.com/en/) - Uses the latest Vuetify 3
 - 🗂 [File based routing](https://github.com/hannoeru/vite-plugin-pages)
 - 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components)
 - 📑 [Layout system](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - 😃 Use icons from any icon sets with classes by [Iconify](https://iconify.design/)
+- 🌍 I18n ready
 - 🔥 Use the [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html) syntax
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 - 🦾 TypeScript & JavaScript versions
 
-[View Demo](https://themeselection.com/demo/sneat-vuetify-vuejs-admin-template-free/demo/)
+[View Demo](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template-free/demo/dashboard)
 
 ## Installation ⚒️
 
-> We recommend you use yarn
-
-1. Install all packages
-
-   ```bash
-   yarn
-
-   # npm install [for npm]
-   ```
-
-2. Run development server
-
-   ```bash
-   yarn serve
-
-   # npm run serve [for npm]
-   ```
-
-3. Generate build files for deployment
-
-   ```bash
-   yarn build
-
-   # npm run build [for npm]
-   ```
+Please [visit](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/documentation/guide/installation.html) our docs for installation guide.
 
 ## What's Included 📦
 
@@ -82,19 +57,24 @@ Build premium quality applications with ease. Use our innovative admin template 
   - Login
   - Register
   - Error
-- User Interface
-  - Typography
-  - Icons
-  - Basic Cards
-  - Tables
-  - Form Layouts
+- Typography
+- Material Design Icons
+- Cards
+- Form layouts
+  - Horizontal Form
+  - Horizontal Form with Icons
+  - Vertical Form
+  - Vertical Form with Icons
+  - Multiple Column
+- Tables
+
 
 ## What's in Premium Version 💎
 
 | Sneat Free Version                                                                             | Sneat Premium Version                                                                        |
 | ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| [Demo](https://themeselection.com/demo/sneat-vuetify-vuejs-admin-template-free/demo/)          | [Demo](https://themeselection.com/demo/sneat-vuetify-vuejs-admin-template/landing)           |
-| [Download](https://themeselection.com/products/sneat-free-vuetify-vuejs-admin-template)        | [Purchase](https://themeselection.com/products/sneat-vuetify-vuejs-admin-template)           |
+| [Demo](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template-free/demo/dashboard)          | [Demo](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/?tab=details#details)           |
+| [Download](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/)        | [Purchase](https://themeselection.com/item/sneat-vuetify-vuejs-admin-template/)           |
 | Single vertical menu                                                                             | Vertical (+ vertical collapsed) & Horizontal menu                                              |
 | Simple Light/Dark theme                                                                          | 3 Skin variants w/ light/dark theme support: Default, Bordered & Semi-dark                     |
 | 1 Simple Dashboard                                                                               | 3 Niche Dashboards                                                                             |
@@ -114,52 +94,44 @@ Build premium quality applications with ease. Use our innovative admin template 
 | -                                                                                                | Starter-kit                                                                                    |
 | -                                                                                                | Internationalization support in components                                                     |
 | Regular Support                                                                                  | Priority Support                                                                               |
-| Basic Documentation                                                                              | Detailed Documentation                                                                         |
+| Basic Documentation         
 
 ## Documentation 📜
 
-Check GitHub [Wiki](https://github.com/themeselection/sneat-vuetify-vuejs-admin-template-free/wiki) of this repo
+Check out our live [Documentation](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/documentation/)
 
 ## Browser Support 🖥️
 
-- Sneat Vuetify VueJS Free Admin Template is built to work best in the latest desktop and mobile and tablet browsers
+At present, we officially aim to support the last two versions of the following browsers:
 
 - Chrome (latest)
 - FireFox (latest)
 - Safari (latest)
+- Microsoft Edge (latest)
 - Opera (latest)
 
 ## Contributing 🦸
 
 Contribution are always welcome and recommended! Here is how:
 
-- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-- Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_URL` Make your changes
-- Create a pull request
+* Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
+* Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_NAME` Make your changes
+* Create a pull request
 
 ### Contribution Requirements 🧰
 
-- When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an open source license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
+* When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
+* If you use content provided by another party, it must be appropriately licensed using an open source license.
+* Contributions are only accepted through Github pull requests.
+* Finally, contributed code must work in all supported browsers (see above for browser support).
 
 ## Creators 😇
 
-- [ThemeSelection](https://themeselection.com)
+* [ThemeSelection](https://themeselection.com)
 
 ## Changelog 📆
 
 Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed release notes to each new release.
-
-## Credits 🙏
-
-- [Vuetify](https://vuetifyjs.com/)
-- [Material Design Icons](https://materialdesignicons.com/)
-- [ApexCharts](https://apexcharts.com/)
-- [Humans Illustrations](https://humans.wannathis.one/)
-- [Freepik](https://www.freepik.com/)
-- [Unsplash](https://unsplash.com/)
 
 ## NOTE 🏷️
 
@@ -171,13 +143,18 @@ Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed relea
 
 If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Sneat then do visit [ThemeSelection](https://themeselection.com/).
 
-## Useful Links 🔗
+## Other variants
 
-- More products from [ThemeSelection](https://themeselection.com)
-- Freebies from [ThemeSelection](https://themeselection.com/products/category/download-free-admin-templates/)
-- [Blog](https://themeselection.com/blog/)
+* [Vue Laravel variant](https://themeselection.com/item/sneat-free-vuetify-vuejs-laravel-admin-template/)
+<!-- Add others here -->
 
-## Social Media 🌍
+## Useful Links 🎁
+
+* [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
+* [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
+* [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
+
+## Social Media :earth_africa:
 
 - Twitter : [https://twitter.com/Theme_Selection](https://twitter.com/Theme_Selection)
 - Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
