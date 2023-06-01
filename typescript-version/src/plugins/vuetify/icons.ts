@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/vue'
-import type { IconAliases, IconProps, IconSet } from 'vuetify'
+import type { IconAliases } from 'vuetify'
 
 const aliases: IconAliases = {
   collapse: 'bx-chevron-up',
@@ -40,8 +40,9 @@ const aliases: IconAliases = {
   sortDesc: 'bx-sort-down',
 }
 
-export const iconify: IconSet = {
-  component: (props: IconProps) => h(Icon, props),
+export const iconify = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  component: (props: any) => h(Icon, props),
 }
 
 export const icons = {
