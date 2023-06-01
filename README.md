@@ -73,7 +73,7 @@ Please [visit](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-templa
 
 | Sneat Free Version                                                                             | Sneat Premium Version                                                                        |
 | ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| [Demo](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template-free/demo/dashboard)          | [Demo](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/?tab=details#details)           |
+| [Demo](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template-free/demo/dashboard)          | [Demo](https://themeselection.com/item/sneat-vuetify-vuejs-admin-template/?tab=details#details)           |
 | [Download](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/)        | [Purchase](https://themeselection.com/item/sneat-vuetify-vuejs-admin-template/)           |
 | Single vertical menu                                                                             | Vertical (+ vertical collapsed) & Horizontal menu                                              |
 | Simple Light/Dark theme                                                                          | 3 Skin variants w/ light/dark theme support: Default, Bordered & Semi-dark                     |
