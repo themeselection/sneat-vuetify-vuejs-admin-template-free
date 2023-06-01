@@ -1,0 +1,195 @@
+@use "@configured-variables" as variables;
+@use "@styles/variables/vuetify";
+@use "vuetify/lib/styles/tools/_elevation" as mixins_elevation;
+
+// 👉 Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6,
+.text-body-1,
+.text-subtitle-1,
+.text-button,
+.v-card-title {
+  color: rgba(var(--v-theme-on-background), var(--v-high-emphasis-opacity));
+}
+
+.v-application,
+.text-body-2,
+.text-subtitle-2,
+.text-overline {
+  color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
+}
+
+// 👉 Button
+.v-btn {
+  .v-icon {
+    --v-icon-size-multiplier: 0.953;
+  }
+
+  &--icon .v-icon {
+    --v-icon-size-multiplier: 1;
+  }
+}
+
+// Alert
+// custom icon style
+$alert-prepend-icon-font-size: 1.125rem !important;
+
+.v-alert:not(.v-alert--prominent) {
+  .v-alert__prepend {
+    padding: 0.25rem;
+    border-radius: 1rem;
+    background-color: #fff;
+
+    .v-icon {
+      block-size: $alert-prepend-icon-font-size;
+      font-size: $alert-prepend-icon-font-size;
+      inline-size: $alert-prepend-icon-font-size;
+    }
+  }
+}
+
+@each $color-name in variables.$theme-colors-name {
+  .v-alert {
+
+    &:not(.v-alert--prominent).text-#{$color-name},
+    &:not(.v-alert--prominent).bg-#{$color-name} {
+      .v-alert__prepend {
+        border: 3px solid rgb(var(--v-theme-#{$color-name}), 0.4);
+        color: rgba(var(--v-theme-#{$color-name})) !important;
+      }
+    }
+
+    &--variant-outlined:not(.v-alert--prominent),
+    &--variant-tonal:not(.v-alert--prominent),
+    &--variant-plain:not(.v-alert--prominent) {
+      &.bg-#{$color-name},
+      &.text-#{$color-name} {
+        .v-alert__prepend {
+          background-color: rgb(var(--v-theme-#{$color-name}));
+          box-shadow: 0 0 0 3px rgba(var(--v-theme-#{$color-name}), 0.4);
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+// 👉 VAvatar
+.v-avatar {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+// 👉 VChip
+.v-chip {
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.v-chip.v-chip--size-default .v-avatar {
+  font-size: 0.8125rem;
+  line-height: normal;
+}
+
+// 👉 VTooltip
+.v-tooltip {
+  .v-overlay__content {
+    font-weight: 500;
+  }
+}
+
+// 👉 VMenu
+.v-menu.v-overlay {
+  .v-overlay__content {
+    .v-list {
+      .v-list-item--density-default {
+        min-block-size: 2.25rem;
+      }
+    }
+  }
+}
+
+// 👉 VTabs
+.v-tabs--vertical:not(.v-tabs-pill) {
+  border-inline-end: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+
+  .v-tab__slider {
+    inset-inline-end: 0;
+    inset-inline-start: unset;
+  }
+}
+
+.v-tabs.v-tabs-pill:not(.v-tabs--stacked) {
+  &.v-tabs--density-default {
+    --v-tabs-height: 38px;
+  }
+}
+
+// 👉 VSliderThumb
+.v-slider-thumb__surface {
+  border: 3px solid rgb(var(--v-theme-surface));
+
+  &::before {
+    inset: 0;
+  }
+}
+
+.v-slider-thumb__label {
+  background: variables.$slider-thumb-label-color;
+  color: rgb(var(--v-theme-on-primary));
+}
+
+.v-slider-thumb__label::before {
+  color: variables.$slider-thumb-label-color;
+}
+
+// 👉 VTimeline
+.v-timeline {
+  .v-timeline-item:not(:last-child) {
+    .v-timeline-item__body {
+      margin-block-end: 0.95rem;
+    }
+  }
+}
+
+// 👉 VDatatable
+.v-data-table {
+  th {
+    background: rgb(var(--v-table-header-background)) !important;
+    font-size: 0.75rem;
+    font-weight: 500 !important;
+    letter-spacing: 0.17px !important;
+    text-transform: uppercase !important;
+
+    .v-data-table-header__content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// 👉 VTable
+.v-table {
+  color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity)) !important;
+
+  th {
+    color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity)) !important;
+    font-size: 0.75rem;
+    text-align: center !important;
+    text-transform: uppercase;
+
+    &:first-child {
+      text-align: start !important;
+    }
+  }
+}

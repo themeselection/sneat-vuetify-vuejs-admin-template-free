@@ -1,0 +1,37 @@
+.v-application {
+  // vertical nav
+  &.v-theme--dark .layout-nav-type-vertical,
+  .v-theme-provider.v-theme--dark {
+    .layout-vertical-nav {
+      // nav-link and nav-group style for dark
+      .nav-link .router-link-exact-active,
+      .nav-group.active:not(.nav-group .nav-group) > :first-child {
+        background-color: rgb(var(--v-theme-primary)) !important;
+        color: rgb(var(--v-theme-on-primary)) !important;
+
+        &::before {
+          z-index: -1;
+          color: rgb(var(--v-global-theme-primary));
+          opacity: 1 !important;
+        }
+      }
+
+      .nav-group {
+        .nav-link {
+          .router-link-exact-active {
+            color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity)) !important;
+
+            &::before {
+              color: transparent;
+            }
+
+            &:hover::before {
+              color: inherit;
+              opacity: var(--v-hover-opacity) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
