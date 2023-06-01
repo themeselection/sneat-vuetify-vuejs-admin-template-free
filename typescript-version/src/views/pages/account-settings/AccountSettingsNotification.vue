@@ -112,3 +112,11 @@ const selectedNotification = ref('Only when I\'m online')
     </VCardText>
   </VCard>
 </template>
+
+<style lang="scss" scoped>
+.v-table {
+  th {
+    text-align: start !important;
+  }
+}
+</style>

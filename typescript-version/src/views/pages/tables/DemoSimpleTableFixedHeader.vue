@@ -71,16 +71,16 @@ const desserts = [
         <td>
           {{ item.dessert }}
         </td>
-        <td>
+        <td class="text-center">
           {{ item.calories }}
         </td>
-        <td>
+        <td class="text-center">
           {{ item.fat }}
         </td>
-        <td>
+        <td class="text-center">
           {{ item.carbs }}
         </td>
-        <td>
+        <td class="text-center">
           {{ item.protein }}
         </td>
       </tr>
