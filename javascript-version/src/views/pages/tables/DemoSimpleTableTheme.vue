@@ -65,7 +65,7 @@ const desserts = [
         v-for="item in desserts"
         :key="item.dessert"
       >
-        <td class="text-center">
+        <td>
           {{ item.dessert }}
         </td>
         <td class="text-center">
