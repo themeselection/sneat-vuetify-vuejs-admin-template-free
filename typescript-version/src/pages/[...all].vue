@@ -6,7 +6,6 @@ import misc404 from '@images/pages/404.png'
 <template>
   <div class="misc-wrapper">
     <ErrorHeader
-      error-code="404"
       error-title="Page Not Found ⚠️"
       error-description="We couldn't find the page you are looking for."
     />
@@ -16,7 +15,7 @@ import misc404 from '@images/pages/404.png'
       <VImg
         :src="misc404"
         alt="Coming Soon"
-        :max-width="800"
+        :max-width="500"
         class="mx-auto"
       />
       <VBtn
