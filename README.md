@@ -58,7 +58,7 @@ Please [visit](https://demos.themeselection.com/sneat-vuetify-vuejs-admin-templa
   - Register
   - Error
 - Typography
-- Material Design Icons
+- Box Icons
 - Cards
 - Form layouts
   - Horizontal Form
