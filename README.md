@@ -2,7 +2,7 @@
 
 <p align="center">
    <a href="https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/logo/logo.png" alt="sneat-logo" width="60px" height="auto">
+      <img src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/logo/logo.png" alt="sneat-logo" width="60px" height="auto">
    </a>
 </p>
 
@@ -27,7 +27,7 @@
    </a>
 </p>
 
-<kbd>[![Sneat – Vuetify Vuejs Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/banner/sneat-vue-free.png)](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/))</kbd>
+<kbd>[![Sneat – Vuetify Vuejs Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/banner/sneat-vuetify-vuejs-admin-template-free.png))</kbd>
 
 ## Introduction 🚀
 
