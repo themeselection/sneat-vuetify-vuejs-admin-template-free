@@ -27,7 +27,7 @@
    </a>
 </p>
 
-<kbd>[![Sneat – Vuetify Vuejs Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/banner/sneat-vuetify-vuejs-admin-template-free.png))</kbd>
+<kbd>[![Sneat – Vuetify Vuejs Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-vuetify-vuejs-admin-template-free/banner/banner.png)](https://themeselection.com/item/sneat-free-vuetify-vuejs-admin-template/)</kbd>
 
 ## Introduction 🚀
 
