@@ -1,5 +1,18 @@
-import { Icon } from '@iconify/vue'
-import type { IconAliases } from 'vuetify'
+import type { IconAliases, IconProps } from 'vuetify'
+
+import checkboxChecked from '@images/svg/checkbox-checked.svg'
+import checkboxIndeterminate from '@images/svg/checkbox-indeterminate.svg'
+import checkboxUnchecked from '@images/svg/checkbox-unchecked.svg'
+import radioChecked from '@images/svg/radio-checked.svg'
+import radioUnchecked from '@images/svg/radio-unchecked.svg'
+
+const customIcons: Record<string, unknown> = {
+  'mdi-checkbox-blank-outline': checkboxUnchecked,
+  'mdi-checkbox-marked': checkboxChecked,
+  'mdi-minus-box': checkboxIndeterminate,
+  'mdi-radiobox-marked': radioChecked,
+  'mdi-radiobox-blank': radioUnchecked,
+}
 
 const aliases: IconAliases = {
   collapse: 'bx-chevron-up',
@@ -14,17 +27,12 @@ const aliases: IconAliases = {
   error: 'bx-x',
   prev: 'bx-chevron-left',
   next: 'bx-chevron-right',
-  checkboxOn: 'custom-checked-checkbox',
-  checkboxOff: 'custom-unchecked-checkbox',
-  checkboxIndeterminate: 'custom-indeterminate-checkbox',
   delimiter: 'bx-circle',
   sort: 'bx-up-arrow-alt',
   expand: 'bx-chevron-down',
   menu: 'bx-menu',
   subgroup: 'bx-caret-down',
   dropdown: 'bx-chevron-down',
-  radioOn: 'custom-checked-radio',
-  radioOff: 'custom-unchecked-radio',
   edit: 'bx-pencil',
   ratingEmpty: 'bx-star',
   ratingFull: 'bxs-star',
@@ -41,8 +49,29 @@ const aliases: IconAliases = {
 }
 
 export const iconify = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  component: (props: any) => h(Icon, props),
+  component: (props: IconProps) => {
+    // Load custom SVG directly instead of going through icon component
+    if (typeof props.icon === 'string') {
+      const iconComponent = customIcons[props.icon]
+
+      if (iconComponent)
+        return h(iconComponent)
+    }
+
+    return h(
+      props.tag,
+      {
+        ...props,
+
+        // As we are using class based icons
+        class: [props.icon],
+
+        // Remove used props from DOM rendering
+        tag: undefined,
+        icon: undefined,
+      },
+    )
+  },
 }
 
 export const icons = {

@@ -5,7 +5,7 @@
 // ℹ️ We need accurate vh in mobile devices as well
 .v-application__wrap {
   /* stylelint-disable-next-line liberty/use-logical-spec */
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100dvh;
 }
 
 // 👉 Typography
@@ -27,7 +27,7 @@ h6,
   color: rgba(var(--v-theme-on-background), var(--v-high-emphasis-opacity));
 }
 
-.v-application,
+body,
 .text-body-1,
 .text-body-2,
 .text-subtitle-1,
@@ -77,36 +77,6 @@ h6,
   --v-input-control-height: auto;
 
   flex: unset;
-}
-
-.v-selection-control--density-comfortable {
-  &.v-checkbox-btn,
-  &.v-radio,
-  &.v-radio-btn {
-    .v-selection-control__wrapper {
-      margin-inline-start: -0.5625rem;
-    }
-  }
-}
-
-.v-selection-control--density-compact {
-  &.v-radio,
-  &.v-radio-btn,
-  &.v-checkbox-btn {
-    .v-selection-control__wrapper {
-      margin-inline-start: -0.3125rem;
-    }
-  }
-}
-
-.v-selection-control--density-default {
-  &.v-checkbox-btn,
-  &.v-radio,
-  &.v-radio-btn {
-    .v-selection-control__wrapper {
-      margin-inline-start: -0.6875rem;
-    }
-  }
 }
 
 .v-radio-group {
@@ -196,6 +166,10 @@ h6,
   color: rgb(var(--v-border-color));
 }
 
+.v-divider.v-divider--vertical {
+  block-size: inherit;
+}
+
 // 👉 DataTable
 .v-data-table {
   /* stylelint-disable-next-line no-descending-specificity */
@@ -210,10 +184,6 @@ h6,
   .v-pagination {
     color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
   }
-}
-
-.v-data-table-footer {
-  margin-block-start: 1rem;
 }
 
 // 👉 v-field
@@ -240,7 +210,7 @@ h6,
 // 👉 VMessages
 .v-messages {
   color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 // 👉 Alert close btn

@@ -79,7 +79,7 @@ const checkbox = ref(false)
         <VTextField
           v-model="company"
           label="Company"
-          placeholder="Pixinvent"
+          placeholder="Themeselection"
         />
       </VCol>
 

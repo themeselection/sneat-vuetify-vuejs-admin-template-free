@@ -2,7 +2,7 @@
 @use "vuetify/lib/styles/tools/_elevation" as mixins_elevation;
 @use "@layouts/styles/mixins" as layoutsMixins;
 
-.v-application .apexcharts-canvas {
+body .apexcharts-canvas {
   &line[stroke="transparent"] {
     display: "none";
   }

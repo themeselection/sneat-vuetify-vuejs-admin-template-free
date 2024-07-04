@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { VDataTable } from 'vuetify/labs/VDataTable'
-
 const isCurrentPasswordVisible = ref(false)
 const isNewPasswordVisible = ref(false)
 const isConfirmPasswordVisible = ref(false)
@@ -65,7 +63,7 @@ const recentDevices = [
     deviceIcon: { icon: 'bxl-android', color: 'success' },
   },
   {
-    browser: 'Chrome on MacOS',
+    browser: 'Chrome on macOS',
     device: 'Apple iMac',
     location: 'New York, NY',
     recentActivity: '28 Apr 2022, 18:20',
@@ -125,6 +123,7 @@ const recentDevices = [
                   :type="isNewPasswordVisible ? 'text' : 'password'"
                   :append-inner-icon="isNewPasswordVisible ? 'bx-hide' : 'bx-show'"
                   label="New Password"
+                  autocomplete="on"
                   placeholder="············"
                   @click:append-inner="isNewPasswordVisible = !isNewPasswordVisible"
                 />
@@ -314,11 +313,11 @@ const recentDevices = [
             <div class="d-flex">
               <VIcon
                 start
-                :icon="item.raw.deviceIcon.icon"
-                :color="item.raw.deviceIcon.color"
+                :icon="item.deviceIcon.icon"
+                :color="item.deviceIcon.color"
               />
               <span class="text-high-emphasis text-base">
-                {{ item.raw.browser }}
+                {{ item.browser }}
               </span>
             </div>
           </template>

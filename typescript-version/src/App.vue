@@ -1,15 +1,9 @@
 <script setup lang="ts">
-import { useTheme } from 'vuetify'
-
 import UpgradeToPro from '@/components/UpgradeToPro.vue'
-
-import { hexToRgb } from '@layouts/utils'
-
-const { global } = useTheme()
 </script>
 
 <template>
-  <VApp :style="`--v-global-theme-primary: ${hexToRgb(global.current.value.colors.primary)}`">
+  <VApp>
     <RouterView />
     <UpgradeToPro />
   </VApp>

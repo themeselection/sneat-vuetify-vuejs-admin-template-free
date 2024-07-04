@@ -1,6 +1,6 @@
 .layout-blank {
   .auth-wrapper {
-    min-block-size: calc(var(--vh, 1vh) * 100);
+    min-block-size: 100dvh;
   }
 
   .auth-card {
@@ -42,4 +42,19 @@
       border-inline-start: 1px solid rgba(var(--v-border-color), var(--v-border-opacity)) !important;
     }
   }
+}
+
+.auth-logo {
+  position: absolute;
+  z-index: 2;
+  inset-block-start: 2rem;
+  inset-inline-start: 2.3rem;
+}
+
+.auth-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.273px;
+  line-height: normal;
+  text-transform: capitalize;
 }

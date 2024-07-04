@@ -43,6 +43,7 @@ const checkbox = ref(false)
           v-model="password"
           prepend-inner-icon="bx-lock"
           label="Password"
+          autocomplete="on"
           type="password"
           placeholder="············"
         />

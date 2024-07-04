@@ -1,24 +1,12 @@
 <script lang="ts" setup>
-import { useTheme } from 'vuetify'
-
-import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue'
-import upgradeBannerDark from '@images/pro/upgrade-banner-dark.png'
-import upgradeBannerLight from '@images/pro/upgrade-banner-light.png'
+import NavItems from '@/layouts/components/NavItems.vue'
+import logo from '@images/logo.svg?raw'
 import VerticalNavLayout from '@layouts/components/VerticalNavLayout.vue'
-import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
 
 // Components
 import Footer from '@/layouts/components/Footer.vue'
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
 import UserProfile from '@/layouts/components/UserProfile.vue'
-
-// Banner
-
-const vuetifyTheme = useTheme()
-
-const upgradeBanner = computed(() => {
-  return vuetifyTheme.global.name.value === 'light' ? upgradeBannerLight : upgradeBannerDark
-})
 </script>
 
 <template>
@@ -71,109 +59,33 @@ const upgradeBanner = computed(() => {
       </div>
     </template>
 
-    <template #vertical-nav-content>
-      <VerticalNavLink
-        :item="{
-          title: 'Dashboard',
-          icon: 'bx-home',
-          to: '/dashboard',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Account Settings',
-          icon: 'mdi-account-cog-outline',
-          to: '/account-settings',
-        }"
-      />
+    <template #vertical-nav-header="{ toggleIsOverlayNavActive }">
+      <RouterLink
+        to="/"
+        class="app-logo app-title-wrapper"
+      >
+        <!-- eslint-disable vue/no-v-html -->
+        <div
+          class="d-flex"
+          v-html="logo"
+        />
+        <!-- eslint-enable -->
 
-      <!-- 👉 Pages -->
-      <VerticalNavSectionTitle
-        :item="{
-          heading: 'Pages',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Login',
-          icon: 'bx-log-in',
-          to: '/login',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Register',
-          icon: 'bx-user-plus',
-          to: '/register',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Error',
-          icon: 'bx-info-circle',
-          to: '/no-existence',
-        }"
-      />
+        <h1 class="font-weight-medium leading-normal text-xl">
+          sneat
+        </h1>
+      </RouterLink>
 
-      <!-- 👉 User Interface -->
-      <VerticalNavSectionTitle
-        :item="{
-          heading: 'User Interface',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Typography',
-          icon: 'mdi-alpha-t-box-outline',
-          to: '/typography',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Icons',
-          icon: 'bx-show',
-          to: '/icons',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Cards',
-          icon: 'bx-credit-card',
-          to: '/cards',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Tables',
-          icon: 'bx-table',
-          to: '/tables',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Form Layouts',
-          icon: 'mdi-form-select',
-          to: '/form-layouts',
-        }"
-      />
+      <IconBtn
+        class="d-block d-lg-none"
+        @click="toggleIsOverlayNavActive(false)"
+      >
+        <VIcon icon="bx-x" />
+      </IconBtn>
     </template>
 
-    <template #after-vertical-nav-items>
-      <!-- 👉 illustration -->
-      <a
-        href="https://themeselection.com/item/sneat-vuetify-vuejs-admin-template"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="margin-left: 7px;"
-      >
-        <img
-          :src="upgradeBanner"
-          alt="upgrade-banner"
-          transition="scale-transition"
-          class="upgrade-banner mx-auto"
-          style="max-width: 230px;"
-        >
-      </a>
+    <template #vertical-nav-content>
+      <NavItems />
     </template>
 
     <!-- 👉 Pages -->
@@ -194,5 +106,18 @@ const upgradeBanner = computed(() => {
   line-height: 1.3125rem;
   padding-block: 0.125rem;
   padding-inline: 0.25rem;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+
+  .app-logo-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+  }
 }
 </style>

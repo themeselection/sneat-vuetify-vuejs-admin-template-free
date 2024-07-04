@@ -14,3 +14,7 @@ export async function loadFonts() {
     },
   })
 }
+
+export default function () {
+  loadFonts()
+}

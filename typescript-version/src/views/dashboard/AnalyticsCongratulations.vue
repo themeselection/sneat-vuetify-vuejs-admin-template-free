@@ -16,22 +16,20 @@ const illustrationJohn = computed(() => global.name.value === 'dark' ? illustrat
         order="2"
         order-sm="1"
       >
-        <VCardItem>
-          <VCardTitle class="text-md-h5 text-primary">
+        <VCardItem class="pb-3">
+          <VCardTitle class="text-primary">
             Congratulations John! 🎉
           </VCardTitle>
         </VCardItem>
 
         <VCardText>
-          <span>
-            You have done 72% 🤩 more sales today.
-            <br>
-            Check your new raising badge in your profile.
-          </span>
+          You have done 72% more sales today.
+          <br>
+          Check your new raising badge in your profile.
           <br>
           <VBtn
             variant="tonal"
-            class="mt-4"
+            class="mt-6"
             size="small"
           >
             View Badges
@@ -48,7 +46,7 @@ const illustrationJohn = computed(() => global.name.value === 'dark' ? illustrat
       >
         <img
           :src="illustrationJohn"
-          :height="$vuetify.display.xs ? '150' : '175'"
+          :height="$vuetify.display.xs ? '150' : '182'"
           :class="$vuetify.display.xs ? 'mt-6 mb-n2' : 'position-absolute'"
           class="john-illustration flip-in-rtl"
         >
@@ -59,7 +57,7 @@ const illustrationJohn = computed(() => global.name.value === 'dark' ? illustrat
 
 <style lang="scss" scoped>
 .john-illustration {
-  inset-block-end: -0.0625rem;
-  inset-inline-end: 3rem;
+  inset-block-end: -0.125rem;
+  inset-inline-end: 3.5rem;
 }
 </style>
