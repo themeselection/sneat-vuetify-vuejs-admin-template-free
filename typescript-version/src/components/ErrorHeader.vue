@@ -9,22 +9,32 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <div class="text-center mb-4">
+  <div class="text-center">
     <!-- 👉 Title and subtitle -->
     <h1
       v-if="props.statusCode"
-      class="text-h1 font-weight-medium"
+      class="header-title font-weight-medium mb-2"
     >
       {{ props.statusCode }}
     </h1>
-    <h5
+    <h4
       v-if="props.title"
-      class="text-h5 font-weight-medium mb-3"
+      class="text-h4 font-weight-medium mb-2"
     >
       {{ props.title }}
-    </h5>
-    <p v-if="props.description">
+    </h4>
+    <p
+      v-if="props.description"
+      class="text-body-1 mb-6"
+    >
       {{ props.description }}
     </p>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.header-title {
+  font-size: clamp(3rem, 5vw, 6rem);
+  line-height: clamp(3rem, 5vw, 6rem);
+}
+</style>

@@ -7,7 +7,7 @@ $divider-gap: 0.75rem;
 // vertical nav app title
 .layout-nav-type-vertical {
   .layout-vertical-nav {
-    @include elevation.elevation(3);
+    @include elevation.elevation(4);
 
     // 👉 Nav header
     .nav-header {
@@ -16,6 +16,15 @@ $divider-gap: 0.75rem;
       .app-title-wrapper {
         h1 {
           font-size: 28px;
+        }
+      }
+    }
+
+    // Small screen nav header actions button removed
+    @media (max-width: 1279px) {
+      &:not(.visible) {
+        .header-action {
+          opacity: 0;
         }
       }
     }
@@ -53,10 +62,10 @@ $divider-gap: 0.75rem;
 
     // Active status indicator
     .nav-link .router-link-exact-active,
-    .nav-group.active:not(.nav-group .nav-group) > :first-child {
+    .nav-group.open .nav-group-label:has(+ .nav-group-children-wrapper > .nav-group-children > .nav-link > .router-link-exact-active) {
       &::after {
         position: absolute;
-        background-color: rgb(var(--v-global-theme-primary));
+        background-color: rgb(var(--v-theme-primary));
         block-size: 2.625rem;
         border-end-start-radius: 0.375rem;
         border-start-start-radius: 0.375rem;
@@ -68,9 +77,17 @@ $divider-gap: 0.75rem;
 
     // 👉 Vertical nav link
     .nav-group {
-      .nav-link {
-        > .router-link-exact-active {
+      .nav-group-children-wrapper .nav-group-children .nav-link {
+        .nav-item-icon {
+          color: rgba(var(--v-theme-on-surface), var(--v-disabled-opacity));
+        }
+
+        .router-link-exact-active {
           @extend %nav-link-nested-active;
+
+          &:hover::before {
+            opacity: calc(var(--v-hover-opacity) * var(--v-theme-overlay-multiplier));
+          }
 
           // active status indicator removed
           &::after {
@@ -80,22 +97,12 @@ $divider-gap: 0.75rem;
       }
 
       // Active & open states for nav group label
-      &.open:not(.active),
-      .nav-group.active {
-        > :first-child {
-          &.nav-group-label {
-            svg,
-            .nav-item-title {
-              color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
-            }
+      &.open {
+        /* stylelint-disable-next-line no-descending-specificity */
+        .nav-group-label {
+          &:has(+ .nav-group-children-wrapper > .nav-group-children > .nav-link > .router-link-exact-active) {
+            @extend %vertical-nav-group-active;
           }
-        }
-      }
-
-      // nav-group active
-      &.active:not(.nav-group .nav-group) {
-        > :first-child {
-          @extend %vertical-nav-group-active;
         }
       }
     }

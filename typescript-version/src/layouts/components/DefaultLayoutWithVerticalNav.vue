@@ -24,7 +24,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
 
         <!-- 👉 Search -->
         <div
-          class="d-flex align-center cursor-pointer"
+          class="d-flex align-center cursor-pointer ms-n3"
           style="user-select: none;"
         >
           <!-- 👉 Search Trigger button -->
@@ -32,8 +32,8 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
             <VIcon icon="bx-search" />
           </IconBtn>
 
-          <span class="d-none d-md-flex align-center text-disabled">
-            <span class="me-3">Search</span>
+          <span class="d-none d-md-flex align-center text-disabled ms-2">
+            <span class="me-2">Search</span>
             <span class="meta-key">&#8984;K</span>
           </span>
         </div>
@@ -41,7 +41,6 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         <VSpacer />
 
         <IconBtn
-          class="me-2"
           href="https://github.com/themeselection/sneat-vuetify-vuejs-admin-template-free"
           target="_blank"
           rel="noopener noreferrer"
@@ -49,11 +48,11 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
           <VIcon icon="bxl-github" />
         </IconBtn>
 
-        <IconBtn class="me-2">
+        <IconBtn>
           <VIcon icon="bx-bell" />
         </IconBtn>
 
-        <NavbarThemeSwitcher class="me-2" />
+        <NavbarThemeSwitcher class="me-1" />
 
         <UserProfile />
       </div>
@@ -62,7 +61,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
     <template #vertical-nav-header="{ toggleIsOverlayNavActive }">
       <RouterLink
         to="/"
-        class="app-logo app-title-wrapper"
+        class="app-logo"
       >
         <!-- eslint-disable vue/no-v-html -->
         <div
@@ -71,7 +70,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         />
         <!-- eslint-enable -->
 
-        <h1 class="font-weight-medium leading-normal text-xl">
+        <h1 class="app-logo-title">
           sneat
         </h1>
       </RouterLink>

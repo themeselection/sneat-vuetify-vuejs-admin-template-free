@@ -18,7 +18,7 @@ const isOpen = ref(false)
       @click="isOpen = !isOpen"
     >
       <VIcon
-        :icon="item.icon || 'bx-circle'"
+        :icon="item.icon || 'bxs-circle'"
         class="nav-item-icon"
       />
       <span class="nav-item-title">{{ item.title }}</span>
@@ -49,14 +49,17 @@ const isOpen = ref(false)
       align-items: center;
       cursor: pointer;
     }
+
     .nav-group-children-wrapper {
       display: grid;
       grid-template-rows: 0fr;
       transition: grid-template-rows 0.3s ease-in-out;
+
       .nav-group-children {
         overflow: hidden;
       }
     }
+
     &.open {
       .nav-group-children-wrapper {
         grid-template-rows: 1fr;

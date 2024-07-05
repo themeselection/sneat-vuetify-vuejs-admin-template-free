@@ -25,7 +25,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
         title: 'CRM',
         href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/dashboards/crm',
         target: '_blank',
-        badgeContent: 'PRO',
+        badgeContent: 'Pro',
         badgeClass: 'bg-light-primary text-primary',
       }"
     />
@@ -34,7 +34,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
         title: 'ECommerce',
         href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/dashboards/ecommerce',
         target: '_blank',
-        badgeContent: 'PRO',
+        badgeContent: 'Pro',
         badgeClass: 'bg-light-primary text-primary',
       }"
     />
@@ -43,7 +43,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
         title: 'Academy',
         href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/dashboards/academy',
         target: '_blank',
-        badgeContent: 'PRO',
+        badgeContent: 'Pro',
         badgeClass: 'bg-light-primary text-primary',
       }"
     />
@@ -52,7 +52,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
         title: 'Logistics',
         href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/dashboards/logistics',
         target: '_blank',
-        badgeContent: 'PRO',
+        badgeContent: 'Pro',
         badgeClass: 'bg-light-primary text-primary',
       }"
     />
@@ -63,7 +63,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
     :item="{
       title: 'Front Pages',
       icon: 'bx-file',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   >
@@ -112,21 +112,11 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   />
   <VerticalNavLink
     :item="{
-      title: 'Permissions',
-      icon: 'bx-shield',
-      href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/apps/permissions',
-      target: '_blank',
-      badgeContent: 'PRO',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
       title: 'Email',
       icon: 'bx-envelope',
       href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/apps/email',
       target: '_blank',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   />
@@ -136,7 +126,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'bx-chat',
       href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/apps/chat',
       target: '_blank',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   />
@@ -146,7 +136,17 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'bx-calendar',
       href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/apps/calendar',
       target: '_blank',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
+      badgeClass: 'bg-light-primary text-primary',
+    }"
+  />
+  <VerticalNavLink
+    :item="{
+      title: 'Kanban',
+      icon: 'bx-grid',
+      href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/apps/kanban',
+      target: '_blank',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   />
@@ -228,7 +228,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'bx-check-circle',
       href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/forms/form-validation',
       target: '_blank',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   />
@@ -238,7 +238,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'bx-align-middle',
       href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/forms/form-wizard-numbered',
       target: '_blank',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   />
@@ -262,7 +262,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'bx-command',
       href: 'https://demos.themeselection.com/sneat-vuetify-vuejs-admin-template/demo-1/access-control',
       target: '_blank',
-      badgeContent: 'PRO',
+      badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
   />

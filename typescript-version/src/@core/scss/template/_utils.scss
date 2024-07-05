@@ -35,7 +35,9 @@
       0,
       $start-at
     );
-  } @else {
+  }
+  /* stylelint-disable-next-line @stylistic/indentation */
+ @else {
     @return $var;
   }
 }

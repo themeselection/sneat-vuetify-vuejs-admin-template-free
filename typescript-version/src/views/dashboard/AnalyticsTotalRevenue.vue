@@ -343,3 +343,7 @@ const moreList = [
     </VRow>
   </VCard>
 </template>
+
+<style lang="scss">
+@use "@core/scss/template/libs/apex-chart.scss"
+</style>
