@@ -1,5 +1,4 @@
 <script setup>
-import VueApexCharts from 'vue3-apexcharts'
 import { useTheme } from 'vuetify'
 
 const vuetifyTheme = useTheme()
@@ -26,7 +25,7 @@ const chartOptions = computed(() => {
     tooltip: { enabled: false },
     dataLabels: { enabled: false },
     stroke: {
-      width: 3,
+      width: 2,
       curve: 'smooth',
       lineCap: 'round',
     },
@@ -80,8 +79,8 @@ const chartOptions = computed(() => {
     markers: {
       size: 1,
       offsetY: 2,
-      offsetX: -4,
-      strokeWidth: 4,
+      offsetX: -5,
+      strokeWidth: 3,
       strokeOpacity: 1,
       colors: ['transparent'],
       strokeColors: 'transparent',
@@ -99,18 +98,18 @@ const chartOptions = computed(() => {
 
 <template>
   <VCard>
-    <VCardText class="pb-1">
-      <h6 class="text-base font-weight-regular">
+    <VCardText class="pb-4">
+      <div class="text-base">
         Order
-      </h6>
-      <h5 class="text-h5 font-weight-medium">
+      </div>
+      <h4 class="text-h4">
         276k
-      </h5>
+      </h4>
     </VCardText>
 
     <VueApexCharts
       type="area"
-      :height="110"
+      :height="104"
       :options="chartOptions"
       :series="series"
     />

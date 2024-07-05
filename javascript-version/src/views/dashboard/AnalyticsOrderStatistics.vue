@@ -1,7 +1,6 @@
 <script setup>
-import VueApexCharts from 'vue3-apexcharts'
 import { useTheme } from 'vuetify'
-import { hexToRgb } from '@layouts/utils'
+import { hexToRgb } from '@core/utils/colorConverter'
 
 const vuetifyTheme = useTheme()
 
@@ -15,7 +14,7 @@ const series = [
 const chartOptions = computed(() => {
   const currentTheme = vuetifyTheme.current.value.colors
   const variableTheme = vuetifyTheme.current.value.variables
-  const disabledTextColor = `rgba(${ hexToRgb(String(currentTheme['on-surface'])) },${ variableTheme['disabled-opacity'] })`
+  const secondaryTextColor = `rgba(${ hexToRgb(String(currentTheme['on-surface'])) },${ variableTheme['medium-emphasis-opacity'] })`
   const primaryTextColor = `rgba(${ hexToRgb(String(currentTheme['on-surface'])) },${ variableTheme['high-emphasis-opacity'] })`
   
   return {
@@ -61,22 +60,24 @@ const chartOptions = computed(() => {
             show: true,
             name: {
               offsetY: 17,
-              fontSize: '14px',
-              color: disabledTextColor,
+              fontSize: '13px',
+              color: secondaryTextColor,
               fontFamily: 'Public Sans',
             },
             value: {
               offsetY: -17,
-              fontSize: '24px',
+              fontSize: '18px',
               color: primaryTextColor,
               fontFamily: 'Public Sans',
+              fontWeight: 500,
             },
             total: {
               show: true,
               label: 'Weekly',
-              fontSize: '14px',
+              fontSize: '13px',
+              lineHeight: '18px',
               formatter: () => '38%',
-              color: disabledTextColor,
+              color: secondaryTextColor,
               fontFamily: 'Public Sans',
             },
           },
@@ -135,46 +136,47 @@ const moreList = [
 
 <template>
   <VCard>
-    <VCardItem class="pb-3">
-      <VCardTitle class="mb-1">
+    <VCardItem>
+      <VCardTitle>
         Order Statistics
       </VCardTitle>
       <VCardSubtitle>42.82k Total Sales</VCardSubtitle>
 
       <template #append>
-        <div class="me-n3 mt-n8">
-          <MoreBtn :menu-list="moreList" />
-        </div>
+        <MoreBtn :menu-list="moreList" />
       </template>
     </VCardItem>
 
     <VCardText>
-      <div class="d-flex align-center justify-space-between mb-3">
-        <div class="flex-grow-1">
-          <h4 class="text-h4 mb-1">
+      <div class="d-flex align-center justify-space-between mb-6">
+        <div class="">
+          <h3 class="text-h3 mb-1">
             8,258
-          </h4>
-          <span>Total Orders</span>
+          </h3>
+          <div class="text-caption text-medium-emphasis">
+            Total Orders
+          </div>
         </div>
 
         <div>
           <VueApexCharts
             type="donut"
-            :height="125"
-            width="105"
+            :height="120"
+            width="100"
             :options="chartOptions"
             :series="series"
           />
         </div>
       </div>
 
-      <VList class="card-list mt-7">
+      <VList class="card-list">
         <VListItem
           v-for="order in orders"
           :key="order.title"
         >
           <template #prepend>
             <VAvatar
+              size="40"
               rounded
               variant="tonal"
               :color="order.avatarColor"
@@ -183,10 +185,10 @@ const moreList = [
             </VAvatar>
           </template>
 
-          <VListItemTitle class="mb-1">
+          <VListItemTitle class="font-weight-medium">
             {{ order.title }}
           </VListItemTitle>
-          <VListItemSubtitle class="text-disabled">
+          <VListItemSubtitle class="text-body-2">
             {{ order.subtitle }}
           </VListItemSubtitle>
 
@@ -199,8 +201,8 @@ const moreList = [
   </VCard>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .card-list {
-  --v-card-list-gap: 21px;
+  --v-card-list-gap: 1.25rem;
 }
 </style>

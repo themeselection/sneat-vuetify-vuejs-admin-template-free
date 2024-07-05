@@ -1,10 +1,9 @@
 <script setup>
-import VueApexCharts from 'vue3-apexcharts'
 import {
   useDisplay,
   useTheme,
 } from 'vuetify'
-import { hexToRgb } from '@layouts/utils'
+import { hexToRgb } from '@core/utils/colorConverter'
 
 const vuetifyTheme = useTheme()
 const display = useDisplay()
@@ -14,7 +13,7 @@ const series = [
     name: `${ new Date().getFullYear() - 1 }`,
     data: [
       18,
-      7,
+      10,
       15,
       29,
       18,
@@ -29,7 +28,7 @@ const series = [
       -18,
       -9,
       -14,
-      -5,
+      -8,
       -17,
       -15,
     ],
@@ -41,13 +40,15 @@ const chartOptions = computed(() => {
   const variableTheme = vuetifyTheme.current.value.variables
   const disabledTextColor = `rgba(${ hexToRgb(String(currentTheme['on-surface'])) },${ variableTheme['disabled-opacity'] })`
   const primaryTextColor = `rgba(${ hexToRgb(String(currentTheme['on-surface'])) },${ variableTheme['high-emphasis-opacity'] })`
+  const secondaryTextColor = `rgba(${ hexToRgb(String(currentTheme['on-surface'])) },${ variableTheme['medium-emphasis-opacity'] })`
   const borderColor = `rgba(${ hexToRgb(String(variableTheme['border-color'])) },${ variableTheme['border-opacity'] })`
   
   return {
     bar: {
       chart: {
         stacked: true,
-        parentHeightOffset: 0,
+        parentHeightOffset: 6,
+        offsetX: -12,
         toolbar: { show: false },
       },
       dataLabels: { enabled: false },
@@ -61,9 +62,10 @@ const chartOptions = computed(() => {
         `rgba(${ hexToRgb(String(currentTheme.info)) }, 1)`,
       ],
       legend: {
-        offsetX: -10,
+        offsetX: -22,
+        offsetY: -1,
         position: 'top',
-        fontSize: '14px',
+        fontSize: '13px',
         horizontalAlign: 'left',
         fontFamily: 'Public Sans',
         labels: { colors: currentTheme.secondary },
@@ -72,10 +74,10 @@ const chartOptions = computed(() => {
           horizontal: 10,
         },
         markers: {
-          width: 8,
-          height: 8,
+          width: 11,
+          height: 11,
           radius: 10,
-          offsetX: -4,
+          offsetX: -2,
         },
       },
       states: {
@@ -83,15 +85,16 @@ const chartOptions = computed(() => {
         active: { filter: { type: 'none' } },
       },
       grid: {
+        strokeDashArray: 6,
         borderColor,
         padding: { bottom: 5 },
       },
       plotOptions: {
         bar: {
-          borderRadius: 10,
+          borderRadius: 9,
           columnWidth: '30%',
-          endingShape: 'rounded',
-          startingShape: 'rounded',
+          borderRadiusApplication: 'around',
+          borderRadiusWhenStacked: 'all',
         },
       },
       xaxis: {
@@ -109,7 +112,7 @@ const chartOptions = computed(() => {
         ],
         labels: {
           style: {
-            fontSize: '14px',
+            fontSize: '13px',
             colors: disabledTextColor,
             fontFamily: 'Public Sans',
           },
@@ -118,7 +121,7 @@ const chartOptions = computed(() => {
       yaxis: {
         labels: {
           style: {
-            fontSize: '14px',
+            fontSize: '13px',
             colors: disabledTextColor,
             fontFamily: 'Public Sans',
           },
@@ -126,20 +129,81 @@ const chartOptions = computed(() => {
       },
       responsive: [
         {
+          breakpoint: 1980,
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '32%',
+                borderRadius: 8,
+              },
+            },
+          },
+        },
+        {
           breakpoint: display.thresholds.value.xl,
-          options: { plotOptions: { bar: { columnWidth: '43%' } } },
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '43%',
+                borderRadius: 8,
+              },
+            },
+          },
         },
         {
           breakpoint: display.thresholds.value.lg,
-          options: { plotOptions: { bar: { columnWidth: '50%' } } },
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '50%',
+                borderRadius: 7,
+              },
+            },
+          },
         },
         {
           breakpoint: display.thresholds.value.md,
-          options: { plotOptions: { bar: { columnWidth: '42%' } } },
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '48%',
+                borderRadius: 8,
+              },
+            },
+          },
         },
         {
           breakpoint: display.thresholds.value.sm,
-          options: { plotOptions: { bar: { columnWidth: '45%' } } },
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '44%',
+                borderRadius: 6,
+              },
+            },
+          },
+        },
+        {
+          breakpoint: 599,
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '44%',
+                borderRadius: 8,
+              },
+            },
+          },
+        },
+        {
+          breakpoint: 420,
+          options: {
+            plotOptions: {
+              bar: {
+                columnWidth: '55%',
+                borderRadius: 6,
+              },
+            },
+          },
         },
       ],
     },
@@ -177,9 +241,9 @@ const chartOptions = computed(() => {
           dataLabels: {
             name: {
               offsetY: 25,
-              fontWeight: 600,
-              fontSize: '16px',
-              color: currentTheme.secondary,
+              fontWeight: 500,
+              fontSize: '15px',
+              color: secondaryTextColor,
               fontFamily: 'Public Sans',
             },
             value: {
@@ -207,7 +271,7 @@ const chartOptions = computed(() => {
         },
         {
           breakpoint: 600,
-          options: { chart: { height: 280 } },
+          options: { chart: { height: 200 } },
         },
       ],
     },
@@ -217,15 +281,30 @@ const chartOptions = computed(() => {
 const balanceData = [
   {
     icon: 'bx-dollar',
-    amount: '$32.5k',
+    amount: '$2.54k',
     year: '2023',
     color: 'primary',
   },
   {
     icon: 'bx-wallet',
-    amount: '$41.2k',
+    amount: '$4.21k',
     year: '2022',
     color: 'info',
+  },
+]
+
+const moreList = [
+  {
+    title: 'Share',
+    value: 'Share',
+  },
+  {
+    title: 'Refresh',
+    value: 'Refresh',
+  },
+  {
+    title: 'Update',
+    value: 'Update',
   },
 ]
 </script>
@@ -243,20 +322,19 @@ const balanceData = [
           <VCardTitle>Total Revenue</VCardTitle>
 
           <template #append>
-            <div class="me-n3">
-              <MoreBtn />
-            </div>
+            <MoreBtn :menu-list="moreList" />
           </template>
         </VCardItem>
 
         <!-- bar chart -->
-        <VueApexCharts
-          id="bar-chart"
-          type="bar"
-          :height="336"
-          :options="chartOptions.bar"
-          :series="series"
-        />
+        <VCardText class="pb-0">
+          <VueApexCharts
+            type="bar"
+            :height="335"
+            :options="chartOptions.bar"
+            :series="series"
+          />
+        </VCardText>
       </VCol>
 
       <VCol
@@ -264,12 +342,11 @@ const balanceData = [
         sm="5"
         xl="4"
       >
-        <VCardText class="text-center">
+        <VCardText class="text-center pt-10">
           <VBtn
-            size="small"
             variant="tonal"
+            class="mb-2"
             append-icon="bx-chevron-down"
-            class="mt-4"
           >
             2023
             <VMenu activator="parent">
@@ -291,17 +368,16 @@ const balanceData = [
             :height="200"
             :options="chartOptions.radial"
             :series="[78]"
-            class="mt-6"
           />
 
-          <p class="font-weight-medium text-high-emphasis mb-7">
+          <h6 class="text-h6 text-medium-emphasis mb-8 mt-1">
             62% Company Growth
-          </p>
-          <div class="d-flex align-center justify-center gap-x-8 gap-y-4 flex-wrap">
+          </h6>
+          <div class="d-flex align-center justify-center flex-wrap gap-x-6 gap-y-3">
             <div
               v-for="data in balanceData"
               :key="data.year"
-              class="d-flex align-center gap-3"
+              class="d-flex align-center gap-2"
             >
               <VAvatar
                 :icon="data.icon"
@@ -313,7 +389,7 @@ const balanceData = [
 
               <div class="text-start">
                 <span class="text-sm"> {{ data.year }}</span>
-                <h6 class="text-base font-weight-medium">
+                <h6 class="text-h6">
                   {{ data.amount }}
                 </h6>
               </div>
@@ -326,7 +402,5 @@ const balanceData = [
 </template>
 
 <style lang="scss">
-#bar-chart .apexcharts-series[rel="2"] {
-  transform: translateY(-10px);
-}
+@use "@core/scss/template/libs/apex-chart.scss"
 </style>

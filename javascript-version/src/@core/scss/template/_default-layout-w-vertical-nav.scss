@@ -11,7 +11,7 @@
         // ℹ️ .layout-footer-sticky#{$ele-layout-footer} => .layout-footer-sticky.layout-wrapper.layout-nav-type-vertical .layout-footer
         .layout-footer-sticky#{$ele-layout-footer} {
           .footer-content-container {
-            @include elevation.elevation(4);
+            @include elevation.elevation(8);
           }
         }
       }

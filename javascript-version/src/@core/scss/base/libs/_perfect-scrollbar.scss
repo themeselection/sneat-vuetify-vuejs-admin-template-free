@@ -3,8 +3,13 @@ $ps-hover-size: 0.375rem;
 $ps-track-size: 0.5rem;
 
 .ps__thumb-y {
-  inline-size: $ps-size;
+  inline-size: $ps-size !important;
   inset-inline-end: 0.0625rem;
+}
+
+.ps__thumb-y,
+.ps__thumb-x {
+  background-color: rgb(var(--v-theme-perfect-scrollbar-thumb)) !important;
 }
 
 .ps__thumb-x {
@@ -26,10 +31,5 @@ $ps-track-size: 0.5rem;
 .ps__rail-y.ps--clicking .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y:hover > .ps__thumb-y {
-  inline-size: $ps-hover-size;
-}
-
-.ps__thumb-x,
-.ps__thumb-y {
-  background-color: rgb(var(--v-theme-perfect-scrollbar-thumb)) !important;
+  inline-size: $ps-hover-size !important;
 }

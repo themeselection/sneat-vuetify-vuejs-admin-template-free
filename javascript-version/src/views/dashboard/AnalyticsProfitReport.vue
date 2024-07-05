@@ -1,10 +1,9 @@
 <script setup>
-import VueApexCharts from 'vue3-apexcharts'
 import {
   useDisplay,
   useTheme,
 } from 'vuetify'
-import { hexToRgb } from '@layouts/utils'
+import { hexToRgb } from '@core/utils/colorConverter'
 
 const vuetifyTheme = useTheme()
 const display = useDisplay()
@@ -86,27 +85,29 @@ const chartOptions = computed(() => {
     <VCardText class="d-flex justify-space-between h-100">
       <div class="d-flex flex-column justify-space-between gap-y-4">
         <div>
-          <h6 class="text-h6 text-no-wrap mb-1">
+          <h5 class="text-h5 mb-1">
             Profile Report
-          </h6>
-          <VChip color="warning">
+          </h5>
+          <VChip
+            color="warning"
+            size="small"
+          >
             Year 2022
           </VChip>
         </div>
 
         <div>
-          <div class="text-success text-sm">
+          <div class="d-flex gap-1 align-center text-success">
             <VIcon
               icon="bx-up-arrow-alt"
-              size="18"
-              class="me-1"
+              size="20"
             />
-            <span>68.2%</span>
+            <span class="text-base d-inline-block">68.2%</span>
           </div>
 
-          <h5 class="text-h5">
+          <h4 class="text-h4">
             $84,686k
-          </h5>
+          </h4>
         </div>
       </div>
 

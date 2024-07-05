@@ -1,5 +1,4 @@
 <script setup>
-import VueApexCharts from 'vue3-apexcharts'
 import { useTheme } from 'vuetify'
 import statsVerticalChart from '@images/cards/chart-success.png'
 import statsVerticalPaypal from '@images/cards/paypal-error.png'
@@ -56,7 +55,7 @@ const tabData = computed(() => {
       title: 'Total Income',
       stats: '$459.1k',
       profitLoss: 65,
-      profitLossAmount: '6.5k',
+      profitLossAmount: '6.5',
       compareToLastWeek: '$39k',
     },
     expenses: {
@@ -64,7 +63,7 @@ const tabData = computed(() => {
       title: 'Total Expenses',
       stats: '$316.5k',
       profitLoss: 27.8,
-      profitLossAmount: '7.2k',
+      profitLossAmount: '7.2',
       compareToLastWeek: '$16k',
     },
     profit: {
@@ -72,7 +71,7 @@ const tabData = computed(() => {
       title: 'Total Profit',
       stats: '$147.9k',
       profitLoss: 35.1,
-      profitLossAmount: '4.5k',
+      profitLossAmount: '4.5',
       compareToLastWeek: '$28k',
     },
   }
@@ -152,6 +151,8 @@ const chartConfig = computed(() => {
         'Jun',
         'Jul',
       ],
+      offsetY: 20,
+      offsetX: -24,
       labels: {
         style: {
           fontSize: '14px',
@@ -170,6 +171,7 @@ const chartConfig = computed(() => {
       size: 8,
       strokeWidth: 6,
       strokeOpacity: 1,
+      offsetX: -10,
       hover: { size: 8 },
       colors: ['transparent'],
       strokeColors: 'transparent',
@@ -187,7 +189,7 @@ const chartConfig = computed(() => {
 
 <template>
   <VCard>
-    <VCardItem>
+    <VCardText>
       <VTabs
         v-model="currentTab"
         class="v-tabs-pill"
@@ -202,11 +204,11 @@ const chartConfig = computed(() => {
           Profit
         </VTab>
       </VTabs>
-    </VCardItem>
+    </VCardText>
 
     <VCardText class="d-flex align-center gap-3">
       <VAvatar
-        size="46"
+        size="48"
         rounded
         :image="tabData.avatar"
       />
@@ -236,26 +238,26 @@ const chartConfig = computed(() => {
     <VCardText>
       <VueApexCharts
         type="area"
-        :height="241"
+        :height="230"
         :options="chartConfig"
         :series="series[currentTab]"
       />
     </VCardText>
 
-    <VCardText class="d-flex align-center justify-center gap-3">
+    <VCardText class="d-flex align-center justify-center pt-2 gap-4">
       <VProgressCircular
         size="45"
+        color="primary"
         :model-value="tabData.profitLoss"
       >
-        <span class="text-xs text-medium-emphasis">{{ tabData.profitLossAmount }}</span>
+        <span class="text-overline text-medium-emphasis">${{ tabData.profitLossAmount }}</span>
       </VProgressCircular>
 
       <div>
         <h6 class="text-base font-weight-regular">
-          <span class="text-capitalize">{{ currentTab }}</span>
-          <span> this week</span>
+          <span class="text-capitalize d-inline-block">{{ currentTab }} this week</span>
         </h6>
-        <span class="text-sm text-disabled">{{ tabData.compareToLastWeek }} less than last week</span>
+        <span class="text-sm d-inline-block">{{ tabData.compareToLastWeek }} less than last week</span>
       </div>
     </VCardText>
   </VCard>

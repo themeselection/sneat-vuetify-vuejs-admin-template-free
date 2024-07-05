@@ -1,7 +1,6 @@
 <script setup>
-import VueApexCharts from 'vue3-apexcharts'
 import { useTheme } from 'vuetify'
-import { hexToRgb } from '@layouts/utils'
+import { hexToRgb } from '@core/utils/colorConverter'
 
 const vuetifyTheme = useTheme()
 
@@ -26,6 +25,8 @@ const chartOptions = computed(() => {
     chart: {
       parentHeightOffset: 0,
       toolbar: { show: false },
+
+      // offsetY: -30,
     },
     plotOptions: {
       bar: {
@@ -35,6 +36,8 @@ const chartOptions = computed(() => {
         endingShape: 'rounded',
         startingShape: 'rounded',
       },
+
+      // offsetY: -30,
     },
     legend: { show: false },
     tooltip: { enabled: false },
@@ -51,6 +54,8 @@ const chartOptions = computed(() => {
     states: {
       hover: { filter: { type: 'none' } },
       active: { filter: { type: 'none' } },
+
+      // offsetY: -30,
     },
     xaxis: {
       categories: [
@@ -65,13 +70,16 @@ const chartOptions = computed(() => {
       axisTicks: { show: false },
       axisBorder: { show: false },
       tickPlacement: 'on',
+      offsetY: -10,
       labels: {
         style: {
-          fontSize: '14px',
+          fontSize: '11px',
           colors: disabledText,
           fontFamily: 'Public Sans',
         },
       },
+
+      // offsetY: -30,
     },
     yaxis: { show: false },
     grid: {
@@ -89,13 +97,13 @@ const chartOptions = computed(() => {
 
 <template>
   <VCard>
-    <VCardText class="pb-1">
-      <h6 class="text-base font-weight-regular">
+    <VCardText class="pb-0">
+      <div class="text-base">
         Revenue
-      </h6>
-      <h5 class="text-h5 font-weight-medium">
+      </div>
+      <h4 class="text-h4 font-weight-medium">
         425k
-      </h5>
+      </h4>
     </VCardText>
 
     <VueApexCharts

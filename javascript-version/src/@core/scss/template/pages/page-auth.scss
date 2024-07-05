@@ -1,16 +1,11 @@
 .layout-blank {
   .auth-wrapper {
-    min-block-size: calc(var(--vh, 1vh) * 100);
+    min-block-size: 100dvh;
   }
 
   .auth-card {
     z-index: 1 !important;
   }
-}
-
-.auth-title {
-  font-size: 28px;
-  font-weight: 700;
 }
 
 .auth-v1-top-shape,
@@ -21,7 +16,7 @@
 .auth-v1-top-shape {
   block-size: 148px;
   inline-size: 148px;
-  inset-block-start: -2.5rem;
+  inset-block-start: -3.5rem;
   inset-inline-end: -2.5rem;
 }
 
@@ -42,4 +37,18 @@
       border-inline-start: 1px solid rgba(var(--v-border-color), var(--v-border-opacity)) !important;
     }
   }
+}
+
+.auth-logo {
+  position: absolute;
+  z-index: 2;
+  inset-block-start: 2.5rem;
+  inset-inline-start: 2.5rem;
+}
+
+.auth-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  line-height: 1.75rem;
 }

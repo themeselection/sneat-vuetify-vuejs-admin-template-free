@@ -19,6 +19,21 @@ const props = defineProps({
 })
 
 const isPositive = controlledComputed(() => props.change, () => Math.sign(props.change) === 1)
+
+const moreList = [
+  {
+    title: 'Yesterday',
+    value: 'Yesterday',
+  },
+  {
+    title: 'Last Week',
+    value: 'Last Week',
+  },
+  {
+    title: 'Last Month',
+    value: 'Last Month',
+  },
+]
 </script>
 
 <template>
@@ -33,8 +48,8 @@ const isPositive = controlledComputed(() => props.change, () => Math.sign(props.
       <VSpacer />
 
       <MoreBtn
-        size="x-small"
         class="me-n3 mt-n4"
+        :menu-list="moreList"
       />
     </VCardText>
 
