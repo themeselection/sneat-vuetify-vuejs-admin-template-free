@@ -24,7 +24,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
 
         <!-- 👉 Search -->
         <div
-          class="d-flex align-center cursor-pointer ms-n3"
+          class="d-flex align-center cursor-pointer ms-lg-n3"
           style="user-select: none;"
         >
           <!-- 👉 Search Trigger button -->
@@ -61,7 +61,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
     <template #vertical-nav-header="{ toggleIsOverlayNavActive }">
       <RouterLink
         to="/"
-        class="app-logo"
+        class="app-logo app-title-wrapper"
       >
         <!-- eslint-disable vue/no-v-html -->
         <div
