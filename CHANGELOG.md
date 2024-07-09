@@ -4,6 +4,13 @@
 
 All notable changes to this template will be documented in this file
 
+## v2.0.0 (2024-07-09)
+
+### Updated
+
+- Updated all dependencies and devDependencies to latest
+- Updated layouts design
+
 ## v1.0.0 (2023-06-01)
 
 ### Added
