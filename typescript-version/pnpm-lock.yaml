@@ -218,7 +218,7 @@ packages:
       eslint-plugin-antfu: 0.43.1(eslint@8.57.0)(typescript@5.5.3)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.57.0)
       eslint-plugin-html: 7.1.0
-      eslint-plugin-import: /eslint-plugin-i@2.28.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: eslint-plugin-i@2.28.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsdoc: 46.10.1(eslint@8.57.0)
       eslint-plugin-jsonc: 2.16.0(eslint@8.57.0)
       eslint-plugin-markdown: 3.0.1(eslint@8.57.0)
@@ -251,7 +251,7 @@ packages:
       eslint-plugin-antfu: 0.43.1(eslint@8.57.0)(typescript@5.5.3)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.57.0)
       eslint-plugin-html: 7.1.0
-      eslint-plugin-import: /eslint-plugin-i@2.28.1(@typescript-eslint/parser@7.15.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: eslint-plugin-i@2.28.1(@typescript-eslint/parser@7.15.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsdoc: 46.10.1(eslint@8.57.0)
       eslint-plugin-jsonc: 2.16.0(eslint@8.57.0)
       eslint-plugin-markdown: 3.0.1(eslint@8.57.0)
@@ -800,7 +800,6 @@ packages:
       "@types/estree": 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
-    dev: true
 
   /@rollup/rollup-android-arm-eabi@4.18.0:
     resolution:
@@ -1494,7 +1493,6 @@ packages:
       muggle-string: 0.4.1
       path-browserify: 1.0.1
       vue-template-compiler: 2.7.16
-    dev: true
 
   "@vue/reactivity@3.4.31":
     dependencies:
@@ -2641,7 +2639,6 @@ packages:
     dependencies:
       eslint: 8.57.0
       eslint-rule-composer: 0.3.0
-    dev: true
 
   ? /eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.15.0)(eslint@8.57.0)
   : resolution:
@@ -2658,7 +2655,6 @@ packages:
     dependencies:
       eslint: 8.57.0
       eslint-rule-composer: 0.3.0
-    dev: true
 
   /eslint-plugin-vue@9.27.0(eslint@8.57.0):
     resolution:
@@ -3487,7 +3483,6 @@ packages:
   path-to-regexp@1.8.0:
     dependencies:
       isarray: 0.0.1
-    dev: true
 
   /path-type@4.0.0:
     resolution:
@@ -3563,7 +3558,6 @@ packages:
       "@vue/devtools-api": 6.6.3
       vue: 3.4.31(typescript@5.5.3)
       vue-demi: 0.14.8(vue@3.4.31)
-    dev: false
 
   pkg-types@1.1.3:
     dependencies:
@@ -4133,7 +4127,6 @@ packages:
     dependencies:
       stylelint: 16.2.1(typescript@5.5.3)
       stylelint-order: 6.0.3(stylelint@16.2.1)
-    dev: true
 
   /stylelint-config-recommended-scss@14.0.0(postcss@8.4.39)(stylelint@16.2.1):
     resolution:
@@ -4152,7 +4145,6 @@ packages:
       stylelint: 16.2.1(typescript@5.5.3)
       stylelint-config-recommended: 14.0.1(stylelint@16.2.1)
       stylelint-scss: 6.3.2(stylelint@16.2.1)
-    dev: true
 
   /stylelint-config-recommended@14.0.1(stylelint@16.2.1):
     resolution:
@@ -4181,7 +4173,6 @@ packages:
       stylelint: 16.2.1(typescript@5.5.3)
       stylelint-config-recommended-scss: 14.0.0(postcss@8.4.39)(stylelint@16.2.1)
       stylelint-config-standard: 36.0.1(stylelint@16.2.1)
-    dev: true
 
   /stylelint-config-standard@36.0.1(stylelint@16.2.1):
     resolution:
@@ -4194,7 +4185,6 @@ packages:
     dependencies:
       stylelint: 16.2.1(typescript@5.5.3)
       stylelint-config-recommended: 14.0.1(stylelint@16.2.1)
-    dev: true
 
   /stylelint-order@6.0.3(stylelint@16.2.1):
     resolution:
@@ -4583,7 +4573,6 @@ packages:
     dependencies:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
-    dev: true
 
   /value-equal@1.0.1:
     resolution:
