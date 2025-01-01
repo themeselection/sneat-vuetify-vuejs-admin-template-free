@@ -87,6 +87,7 @@ const isPasswordVisible = ref(false)
                 <VTextField
                   v-model="form.password"
                   label="Password"
+                  autocomplete="password"
                   placeholder="············"
                   :type="isPasswordVisible ? 'text' : 'password'"
                   :append-inner-icon="isPasswordVisible ? 'bx-hide' : 'bx-show'"
@@ -158,5 +159,5 @@ const isPasswordVisible = ref(false)
 </template>
 
 <style lang="scss">
-@use "@core/scss/template/pages/page-auth.scss";
+@use "@core/scss/template/pages/page-auth";
 </style>
